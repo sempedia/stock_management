@@ -1,0 +1,168 @@
+/* Style the body of the app*/
+body {
+    background-color: #34eb6b;
+    background-image: url("../media/bg4.jpg");
+}
+
+/* Style Table pagination */
+
+.paging-nav{
+    text-align: right;
+    padding-top: 2px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.paging-nav a{
+    margin:auto 1px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1px 7px;
+    background: #3287a8;
+    color: white;
+    border-radius:100px;
+}
+
+
+.paging-nav .selected-page{
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/*Align the title to the center of the page */
+
+.table{
+    font-size: 13px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+/* Make alternating colors for the table rows*/
+
+.table tr:nth-child(odd){
+    background: #B8CAE4;
+}
+
+.table tr:nth-child(even){
+    background: #dae5f4;
+}
+th{
+    background-color: #337ab7;
+    color: white;
+}
+
+/* Style the table <div> element */
+
+.display_table{
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  box-shadow: 12px 12px 10px #33516e;
+}
+
+/* Style the header text */
+.header{
+    font-family: helvetica;
+    color: #337ab7;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 6px 6px 6 px #c9c6c6;
+    display: block;
+    font-weight: bolder;
+  }
+
+
+
+/* Style the notifications messages*/
+
+.success{
+    list-style: none;
+    background-color: #2e6da4;
+    color: white;
+    box-shadow: 12px 12px 12px #301ce6;
+    text-align: center;
+}
+
+/* Style the buttons and give them 100% from the row the button it is in it. */
+
+.mybutton {
+    width:100%;
+}
+
+/* Style Version Modal Button*/
+
+#version-display{
+    background-color: #d60c0c;
+    color: white;
+    box-shadow: 5px 12px 12px #6980ce;
+    text-align: center;
+    display: inline;
+    font-weight: bolder;
+    padding: 15px;
+    position: fixed;
+    top: 40px;
+    left: -5px;
+    z-index: 3000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Style Modal Header */
+
+.modal-header{
+    padding: 2px 16px;
+    background-color: #d60c0c;
+    color:white;
+}
+
+
+/* Style Modal Body */
+
+.modal-body{
+    padding: 2px 16px;
+}
+
+
+/* Style Modal Footer */
+
+.modal-footer{
+    padding: 2px 16px;
+    background-color: #d60c0c;
+    color:white;
+}
+
+
+/* Style Modal Content */
+
+.modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+/* Style Developer Info */
+
+.dev-info{
+    width: 50%;
+    text-align: center;
+    font-family: helvetica;
+    font-weight: bold;
+    display: inline;
+}
+
+
+/* Style Developer Info Logo*/
+
+.dev-info-logo{
+    width: 50px;
+    float: left;
+}

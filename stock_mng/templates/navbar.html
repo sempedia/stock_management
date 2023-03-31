@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">Stock Management</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          {% comment %} <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a> {% endcomment %}
+        </li>
+        {% if request.user.is_authenticated %}
+        {% comment %} <li class="nav-item">
+          <a class="nav-link" href="/list_items">List Items</a>
+        </li> {% endcomment %}
+        {% comment %} <li class="nav-item">
+          <a class="nav-link" href="/add_items">Add Items</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/list_history">List History</a>
+        </li> {% endcomment %}
+        {% endif %}
+        {% comment %} <li class="nav-item">
+          <a class="nav-link" href="/about">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact us</a>
+        </li> {% endcomment %}
+      </ul>
+      <ul class="navbar-nav">
+        {% if request.user.is_authenticated %}
+        <li><a href="/accounts/logout"><button class="btn btn-danger">{{ user }} | Logout</button></a></li>
+        {% else %}
+        <li><a href="/accounts/login">Login</a></li>
+        {% endif %}
+    </ul>
+  </div>
+</nav>
+
+
+<!--Start Modal Button-->
+<a href='#'><div id="version-display" data-toggle='modal' data-target='#myModal'>SM VS:1.0</div></a>
+<!--End Modal Button-->
+
+<!--Start Modal fade-->
+<div id="myModal" class="modal fade" role="dialog">
+  <!--Start Modal dialog-->
+  <div class="modal-dialog">
+    <!--Start Modal Content-->
+    <div class="modal-content">
+      <!--Modal Header-->
+      <div class="modal-header">
+        
+          <h4 class="modal-title">System Information</h4>
+      </div><!--End Modal Header-->
+      <!--Modal Body-->
+      <div class="modal-body">
+        <!--Start dev-info-->
+        <div class="dev-info">
+          <p class=""><b>STOCK MANAGEMENT SYSTEM INFORMATION</b></p>
+          <p>VERSION: 1.0</p><br>
+          <p class="modal-header">DEVELOPER:</p>
+          <p>Alina Bazavan</p>
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+            <p>sempedia@gmail.com</p></a>
+          <a href="https://github.com/sempedia" target="_blank">
+            <p>https://github.com/sempedia</p></a>
+          <a href="https://www.linkedin.com/in/alina-bazavan/" target="_blank">
+            <p>https://www.linkedin.com/in/alina-bazavan/</p></a>
+          <a href="https://twitter.com/SemPedia" target="_blank">
+            <p>https://twitter.com/SemPedia</p></a>
+          <a href="https://github.com/sempedia" target="_blank">
+            <p><img src="/static/media/logo.png" alt="DEVELOPER LOGO"></p></a>
+      </div><!--End dev-info-->
+    </div><!--End Modal Body-->
+      <!--Modal Footer-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+            <!--<button type="button" class="close" data-dismiss="modal">@times;</button>-->
+          </div><!--End Modal Footer-->
+        </div><!--End Modal Content-->
+      </div><!--End Modal dialog-->
+    </div><!--End Modal Fade-->
+
