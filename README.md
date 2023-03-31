@@ -1,5 +1,5 @@
 
-Stock Management System version 1.0 using stacks: 
+Stock Management System *version 1.0 using stacks: 
 Python
 Django
 Html
@@ -8,5 +8,4 @@ jQuery
 JavaScript
 Bootstrap
 MySQL
-
 
