@@ -1,1 +1,1 @@
-web gunicorn stock_mng.wsgi: apllication --log-file -
+web: gunicorn stock_mng.wsgi: apllication --log-file -
