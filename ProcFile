@@ -1,1 +1,2 @@
-web: gunicorn stock_mng.wsgi: apllication --log-file -
+
+web: gunicorn --pythonpath src store.wsgi: apllication --log-file -
