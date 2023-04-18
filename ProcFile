@@ -1,2 +1,2 @@
 
-web: uwsgi --http :$PORT --wsgi-file stock_mng/wsgi.py
+web: gunicorn store.wsgi: apllication --log-file -
