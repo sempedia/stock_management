@@ -1,2 +1,2 @@
-web: gunicorn store.wsgi: apllication --log-file - --workers=1
+web: gunicorn store.wsgi:apllication --log-file - --workers=1
 worker: python manage.py runworker --settings=myproject.settings.prod
