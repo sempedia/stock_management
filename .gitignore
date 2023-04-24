@@ -1,0 +1,28 @@
+# Python compiled files
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+
+# Local development settings
+/local_settings.py
+
+# Database
+*.sqlite3
+
+# Static files
+/staticfiles/
+
+# Media files
+/media/
+
+# Environment variables file
+.env
+
+# IDE files
+.vscode/
+
+
+# Dependencies
+/venv/
