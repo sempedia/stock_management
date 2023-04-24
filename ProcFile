@@ -1,2 +1,5 @@
-web: gunicorn stock_mng.wsgi:application --log-file - --workers=2
+<<<<<<< HEAD
+=======
+web: gunicorn stock_mng.wsgi:apllication --log-file - --workers=1
+>>>>>>> origin/master
 worker: python manage.py runworker --settings=myproject.settings.prod
