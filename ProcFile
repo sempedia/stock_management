@@ -1,3 +1,2 @@
 
-web: gunicorn stock_mng.wsgi:application --log-file - --workers=2
-worker: python manage.py runworker --settings=myproject.settings.prod
+web: gunicorn stock_mng.wsgi:app --log-file - --workers=2
