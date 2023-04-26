@@ -1,2 +1,2 @@
 
-web: gunicorn stock_mng.wsgi:app --log-file - --workers=2
+web: gunicorn --pythonpath src store.wsgi:app --log-file - --workers=2
