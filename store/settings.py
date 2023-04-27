@@ -98,7 +98,7 @@ DATABASES = {
         'NAME': 'stock_mng',
         'USER': 'Alina',
         'PASSWORD': 'ABsemprog3030!',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
