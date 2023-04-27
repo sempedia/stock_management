@@ -1,2 +1,2 @@
 
-web: gunicorn --preload store.wsgi:app --workers=2
+web: gunicorn --preload store.wsgi:stock_mng --workers=2
