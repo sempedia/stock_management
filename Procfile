@@ -1,2 +1,2 @@
 
-web: gunicorn --preload --pythonpath src store.wsgi:server --workers=2
+web: gunicorn --preload --pythonpath src store.wsgi:app --workers=2
