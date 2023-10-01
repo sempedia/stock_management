@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, '/stock_mng/static'),  # deployment settings
+    os.path.join(BASE_DIR, 'stock_mng/static'),  # deployment settings
     ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # deployment settings
 
